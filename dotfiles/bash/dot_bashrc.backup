@@ -13,10 +13,10 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
     [[ -f "/etc/profile.d/vte.sh" ]] && source /etc/profile.d/vte.sh
 fi
 
-# Enable Git v2.9.x if running on OEL machine.
-if [[ `hostname` == "tlangfor-linux" ]]; then
-    source scl_source enable rh-git29
-fi
+# Enable Git v2.9.x if running on OEL7 machine.
+# if [[ `hostname` == "tlangfor-linux" ]]; then
+#     source scl_source enable rh-git29
+# fi
 
 export NVM_DIR="$HOME/.nvm"
 # These scripts pre-pend to path
@@ -34,3 +34,7 @@ export PATH=/home/temple/bin:$PATH
 export PATH=/home/temple/bin/Work/temos/bin:$PATH
 
 [[ -e "/home/temple/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/home/temple/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
+
+export PATH=/home/temple/Work/temos/bin:$PATH
+
+[[ -e "/home/temple/Work/temos/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/home/temple/Work/temos/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"

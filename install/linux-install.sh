@@ -26,7 +26,7 @@ function install() {
     "${temos}"/install/tmux/apt-git-make-install-tmux.sh
     "${temos}"/dotfiles/tmux/activate-tmux.sh
 
-    # install tmux and activate dotfiles
+    # install fzf
     "${temos}"/install/fzf/git-install-fzf.sh
     "${temos}"/dotfiles/fzf/activate-fzf.sh
 

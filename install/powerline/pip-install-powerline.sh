@@ -8,9 +8,9 @@
 
 # Configure Powerline Python
 #
-pip install --upgrade pip
-pip install --user powerline-status
-pip install --user git+git://github.com/powerline/powerline
+pip3 install --user --upgrade pip
+pip3 install --user powerline-status
+pip3 install --user git+git://github.com/powerline/powerline
 
 # Install via APT
 #

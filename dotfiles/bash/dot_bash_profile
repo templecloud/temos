@@ -107,7 +107,8 @@ fi
 
 # /usr/java/jdk-11.0.5
 if [ "$(uname)" == "Linux" ]; then
-    export JAVA_HOME="/usr/java/jdk-11.0.5"
+    # export JAVA_HOME="/usr/java/jdk-11.0.5"
+    export JAVA_HOME="/etc/alternatives/java_sdk"
 fi
 
 if [ "$(hostname)" == "occam" ]; then

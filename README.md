@@ -61,6 +61,38 @@ A personal project containing install scripts, dotfiles, environments, shell fun
     * New      : 'Menlo for Powerline'
 
 
+* Ensure Docker
+
+    * https://oracle-base.com/articles/linux/docker-install-docker-on-oracle-linux-ol8
+
+    ```bash
+    sudo dnf install -y dnf-utils zip unzip
+    sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+    # dnf remove -y runc
+    sudo dnf install -y docker-ce --nobest
+    
+    sudo systemctl enable docker.service
+    sudo systemctl start docker.service
+    sudo systemctl status docker.service
+    
+    sudo groupadd docker
+
+    newgrp docker
+    sudo usermod -aG docker $USER
+    docker info
+    docker version
+    ```
+
+    > See also: https://oracle-base.com/articles/linux/podman-install-on-oracle-linux-ol8
+
+
+* Ensure Tools
+
+    ```bash
+    sudo yum install -y terminator
+    sudo yum install -y golang
+    ```
+
 
 ---
 
